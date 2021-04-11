@@ -11,10 +11,10 @@ for (let i = 0; i < s.length; i++) {
     }
 }
 
-//while do
+//while do || untuk melakukan pengulangan suatu variabel berdasarkan suatu kondisi
 const found = false;
 let i = 0;
-while (i < s.length) {
+while (i < s.length) {  //  while (Kondisi) { aksi } selama kondisi bernilai true maka lakukan aksi dalam blok.
     if (s[i]==='p'){
         console.log("Found in :"+i);
     }

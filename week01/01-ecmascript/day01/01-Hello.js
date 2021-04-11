@@ -1,1 +1,1 @@
-console.log("JS WORD");
+console.log("JS WORD"); // tanda "" atau '' string

@@ -1,14 +1,14 @@
 const s = "Javas";
 
-for (let i = 0; i < s.length; i++) {
-    console.log(s[i]);
+for (let i = 0; i < s.length; i++) { // INCREMENT || Operator ++ || Penjumlahan
+    console.log(s[i]); 
 }
 
 //=================================
 
 const x = "Javas";
 
-for (let i = x.length; i >=0; i--) {
+for (let i = x.length; i >=0; i--) { // Decrement || Operator -- || Pengurangan
     console.log(x[i]);
 }
 

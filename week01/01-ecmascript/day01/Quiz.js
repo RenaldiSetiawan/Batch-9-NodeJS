@@ -1,53 +1,47 @@
 // Soal 1
-// function sum(n){        
-// if (toString.call(n) !== "[object Array]")
-//        return false;
-//          var total =  0;
-//                for(var i=0;i<n.length;i++)
-//                  {                  
-//                    if(isNaN(n[i])){
-//                    continue;
-//                     }
-//                      total += Number(n[i]);
-//                   }
-//                 return total;
-//                }
-//    console.log(sum([3,4,5,6]));
- 
+function sumDigit(n) {  //(n) adalah parameter
+    
+   let digit1 = 0, digit2 = 0, digit3 = 0, digit4 = 0, r = 0; // Deklarasi variable (var/let/const)
+   // let adalah block scope : let tidak akan mengijinkan duplikasi variable
+   digit4 = Math.floor(n / 1000);
+   r = n % 1000;
+   digit3 = Math.floor(r / 100);
+   r = r % 100;
+   digit2 = Math.floor(r / 10);
+   digit1 = r % 10;
+
+   return digit1 + digit2 + digit3 + digit4; //Fungsi RETURN adalah mengembalikan nilai
+}
+
+console.log(sumDigit(3456))
+
 //Soal 2
-// function reverse(n) {
-//     const reversed = n.toString().split('').reverse().join('');
-//     return reversed;
-//   }
-//   console.log(reverse(1234));
+function reverse(n) {
+    const reversed = n.toString().split('').reverse().join('');
+    return reversed; //Fungsi RETURN adalah mengembalikan nilai
+  }
+  console.log(reverse(1234));
 
 //Soal 3
-// function howManyFrogJum(x, y, k) {
-//     return (Math.ceil((y-x)/k))
-// }
-// console.log(howManyFrogJum(10,85,30));
+function howManyFrogJum(x, y, k) {
+    return (Math.ceil((y-x)/k))  //Fungsi RETURN adalah mengembalikan nilai
+}
+console.log(howManyFrogJum(10,85,30));
 
 
 //soal 4
-// function howManyWord(s) {
-//    var i =0;
-//    var numberofwords=1;
+function countWord(s){
+   let count =0;
+   for (let i = 0; i < s.length; i++) {
+       if(s[i] === " " || i===s.length-1){
+           count++;
+       }
+       
+   }
+   return count; //Fungsi RETURN adalah mengembalikan nilai
+} 
 
-//    while(i<= s.length) {
-//        if (s.substring(i,i+1) == " ") {
-//            numberofwords++;
-//            i++;
-//        }
-//        if (s.substring(i,i+1) == "\n") {
-//         numberofwords++;
-//         i++;
-
-//        }
-//        i++;
-//    }
-//    return numberofwords;
-// }
-//   console.log(howManyWord("aku suka javascript fullstack"));
+console.log(countWord("aku suka javascript"));
 
 // Soal 5
 function searchWord(k) {
@@ -82,6 +76,38 @@ function searchWord(k) {
 //     return hasil;
 // }
 // console.log(deretSatu(5));
+
+//soal 8
+function negation(n){
+   let out = ""
+   let counter=0;
+   for (let i = 1; i <= n; i++) {
+       if (counter <= n){
+           out += (i *-1)+","+i +","
+           counter++;
+       }
+   }
+   return out;
+}
+
+console.log(negation(25))
+
+//soal 9
+function randomPosition(k){
+   out = ""
+   for (let i = 100; i < 999; i++) {
+       digit3 = Number(i/100);
+       r = i %100;
+       digit2 = Number(r/10);
+       digit1 = r%10;
+       if(digit1 === k|| digit2===k || digit3===k){
+           out += i +","
+       }        
+   }
+   return out;
+}
+
+console.log(randomPosition(7));
 
 // Soal 10
 // function isPalindrome(s) {
