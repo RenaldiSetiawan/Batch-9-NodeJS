@@ -16,7 +16,7 @@ for (let i = x.length; i >=0; i--) { // Decrement || Operator -- || Pengurangan
 
 function reverse(s){
     let r =""
-    for (let i = s.length-1; i >= 0; i--) {
+    for (let i = s.length-1; i >= 0; i--) { // LENGTH untuk menghitung jumlah karakter yang ada,
         r = r + s[i]
     }
     return r;
