@@ -1,12 +1,14 @@
-// function factorial(n) { 
-//     if (n === 0) {
-//     return 1; 
-//     }
-//   return n * factorial(n-1);
-         
-// }
-// console.log(factorial(5));
+//16.Buat function factorial untuk menampilkan hasil factorial, contoh : 5! = 5 * 4 * 3 * 2 * 1
 
+function factorial(n) { 
+    if (n === 0) {
+    return 1; 
+    }
+  return n * factorial(n-1);
+         
+}
+console.log(factorial(5));
+/***************************/
 function factorial(n){
 let total = 1;
 

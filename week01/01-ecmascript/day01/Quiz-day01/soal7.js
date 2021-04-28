@@ -1,11 +1,15 @@
-function deretSatu(k) {
-        let hasil = '';
-        for (let i = 0; i < k; i++) {
-            for (let j = 0; j <= i; j++) {
-                hasil += '1';
-            }
-            hasil += ',';
-        }
-        return hasil;
+/* 7. Buat function untuk menampilkan deretan angka urut seperti :
+ */
+
+console.log("Soal 7")
+function deretSatu(number) {
+    let satu = 1
+    let arraySatu = []
+    
+    for (let i = 0; i < number; i++) {
+        arraySatu.push(satu)
+        satu = (satu*10)+1
     }
-    console.log(deretSatu(5));
+    return arraySatu
+}
+console.log(deretSatu(5))

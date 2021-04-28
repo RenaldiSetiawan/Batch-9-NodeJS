@@ -1,3 +1,6 @@
+/* 1. User meng-input 4 digit angka, contoh 3456. Buat function untuk menjumlahkan 4 digit angka
+yang diinput, contoh hasil penjumlahan:  */
+
 function sumDigit(n) {  //(n) adalah parameter
     
        let digit1 = 0, digit2 = 0, digit3 = 0, digit4 = 0, r = 0; // Deklarasi variable (var/let/const)

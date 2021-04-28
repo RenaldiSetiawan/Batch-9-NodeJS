@@ -1,3 +1,8 @@
+/* 5. Buat function cariKata dengan dua parameter, dimana parameter pertama adalah kalimat yang
+akan dicari, parameter kedua adalah kata yang akan dicari dari inputan pertama. Return function
+adalah booelan.
+ */ 
+
 function searchWord(k) {
             const lowerString = k.toLowerCase();
             const characters = lowerString.replace(/[\W_]/g, '');

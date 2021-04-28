@@ -10,6 +10,9 @@
 // console.log(`Before Swap => a=${b}, b=${a}`);
 // console.log(`After Swap => a=${a}, b=${b}`);
 
+/* 11.Terdapat dua variable yaitu a & b, masing masing menyimpan nilai integer. Buat function untuk
+      memindahkan value dari variable a ke variable b tanpa membuat variable ke 3 */
+
 let a = 9
 let b = 5;
 

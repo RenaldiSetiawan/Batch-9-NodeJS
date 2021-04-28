@@ -20,3 +20,14 @@ console.log(numbers);
 // Hapus element di Last Index
 numbers.pop();
 console.log(numbers)
+
+
+/* Sesuai namanya “spread”, 
+   fitur ini digunakan untuk menyebarkan nilai array atau lebih tepatnya 
+   iterable object menjadi beberapa elemen. 
+   Spread operator dituliskan dengan tiga titik (...). 
+   Mari kita lihat contoh kode berikut: */
+
+const favorites = ["Seafood", "Salad", "Nugget", "Soup"];
+
+console.log(...favorites);

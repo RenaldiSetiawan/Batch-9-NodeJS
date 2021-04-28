@@ -1,3 +1,6 @@
+/* 12.Terdapat bilangan array integer, buat function untuk menampilkan bilangan genap saja.
+      Gunakan split() method untuk merubah string menjadi array */
+
 let arr = [2,3,4,5,6,7];
 let genap = [];
 let i = 0;

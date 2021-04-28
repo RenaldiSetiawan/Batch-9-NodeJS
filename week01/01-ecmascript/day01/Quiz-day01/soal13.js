@@ -1,3 +1,6 @@
+/* 13. Buat function untuk menampilkan kata terpanjang. Gunakan split untuk merubah string menjadi
+       array. */
+
 function kataTerpanjang(word) {
     let t = 0;
     let ts = word.split(' ');

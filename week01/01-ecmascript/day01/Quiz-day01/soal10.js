@@ -1,12 +1,14 @@
-function isPalindrome(s) {
-        const lowerString = s.toLowerCase();
-        const characters = lowerString.replace(/[\W_]/g, '');
-        const len = characters.length;
-    
-        for (var i = 0; i < len / 2; i++) {
-           if (characters[i] !== characters[len - 1 - i]) return false;
-        }
-        return true;
+/* 10.Buat function isPalindrome untuk mencek apakah kata yang diinput palindrome. Return function
+      true jika palindrome.
+ */
+
+      console.log("Soal 10")
+      function isPalindrome(words) {
+          words = words.toLowerCase()
+          for (let i = 0; i < words.length/2; i++) {
+              if (words[i] !== words[words.length-(i+1)]) return false
+          }
+          return true
       }
-      console.log(isPalindrome('Kasur ini ruSak')); // true
+      console.log(isPalindrome('Kasur Ini ruSak'))
     

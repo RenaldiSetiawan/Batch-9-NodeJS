@@ -40,9 +40,28 @@ join.reverse();
 console.log(join)
 
 //no j
-// function switch(vege,`TOMAT`,`JERUK`){
+function replaceMember(arrayContainer, firstParam, secondParam) {
+    const firstIndex = arrayContainer.indexOf(firstParam)
+    const secondIndex = arrayContainer.indexOf(secondParam)
+    arrayContainer.splice(firstIndex, 1, secondParam)
+    arrayContainer.splice(secondIndex, 1, firstParam)
+    return arrayContainer
+}
+console.log(replaceMember(sehat, 'Tomat', 'Jeruk'))
 
-// }
+function anotherReplaceMember(arrayVeg, firstParam, secondParam) {
+    let firstIndex
+    let secondIndex
+    for (let i = 0; i < arrayVeg.length; i++) {
+        if (arrayVeg[i] === firstParam) firstIndex = i
+        else if(arrayVeg[i] === secondParam) secondIndex = i        
+    }
+    arrayVeg.splice(firstIndex, 1, secondParam)
+    arrayVeg.splice(secondIndex, 1, firstParam)
+
+    return arrayVeg
+}
+console.log(anotherReplaceMember(sehat, 'Jeruk', 'Tomat'))
 
 
 
